@@ -472,7 +472,7 @@
                     var e = "e" + i;
 
                     dynamicExp += "var " + e + " = " + s + "(a[" + c + "],b[" + c + "]); ";
-                    dynamicExp += "if(" + e + ") { return " + e + "; } ";
+                    dynamicExp += "if (" + e + ") { return " + e + "; } ";
                     dynamicExp += "else { ";
                 }
 
@@ -643,7 +643,7 @@
                                 }
                                 else {
                                     // add column to sort list array
-                                    config.sortList.push([i,this.order]);
+                                    config.sortList.push([i, this.order]);
                                 }
                             }
                             setTimeout(function() {
